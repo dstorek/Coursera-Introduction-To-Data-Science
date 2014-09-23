@@ -1,0 +1,4 @@
+SELECT count(*) FROM (
+    SELECT * FROM frequency t, frequency w
+    WHERE t.term = 'transactions'AND w.term = 'world' AND t.docid = w.docid
+) x;
